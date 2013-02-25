@@ -1,0 +1,44 @@
+---
+layout: post
+title: NPR.io
+category: posts
+---
+
+Introducing [NPR.io][nprio], the fatest way to get straight to the news.
+
+<img src="/images/npr.io-ss1.png" width=300 style="border:none"/>
+<img src="/images/npr.io-ss2.png" width=300 style="border:none"/>
+
+## Why?
+
+The NPR iOS app takes too many clicks to just get to a playlist of the latest show like All Things Considered or Morning Edition. With [NPR.io][nprio], you're one click away from hourly news and the most recent show; after that it plays through all of the stories. Each story you play all the way through is tracked locally so will be automatically skipped next time.
+
+## How
+
+NPR.io is a [Jekyll](http://jekyllrb.com/) app written in CoffeeScript, deployed to Amazon S3, fronted by CloudFront. That means it *should* never go down.
+
+It uses the [NPR API](http://www.npr.org/api/queryGenerator.php) to get the latest shows, and localStorage to keep track of your settings and plays.
+
+[Fork it here!](https://github.com/nickmerwin/npr.io)
+
+---
+
+## Notes
+
+* iOS Safari:
+  * HTML5 audio won't autoplay without a user click, so the page loads with a clickable overlay.
+  * you can use the built in iOS play/next/previous buttons on the lock screen
+* no FireFox support yet, since FF does not support mp3 in HTML5 audio.
+* thank you Lee Donahoe for the app icon!
+
+## Todos
+
+* push state for forward / back navigation
+
+---
+
+For issues or suggestions check out the public issue tracker here:
+[https://github.com/nickmerwin/npr.io/issues](https://github.com/nickmerwin/npr.io/issues)
+
+[nprio]: http://npr.io
+[github]: https://github.com/nickmerwin/npr.io-public

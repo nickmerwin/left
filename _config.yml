@@ -1,13 +1,13 @@
 markdown: rdiscount
 pygments: true
-permalink: /posts/:title
+permalink: /:year/:month/:day/:title/
 auto: true
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Nick Merwin
+url: http://nickmerwin.com
+description: Coding for kicks.
+twitter: nickmerwin
+github: nickmerwin
+gravatar_url: http://gravatar.com/avatar/4706d1179c3cef5311929b17ef19882a
